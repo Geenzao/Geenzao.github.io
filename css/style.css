@@ -18,7 +18,7 @@
 	
 	05. About Section
 	
-	06. Resume Section
+	06. Green IT Section
 	
 	07. Portfolio Section
 	
@@ -767,9 +767,6 @@ body.section-switching.up .animation-block{
 
 
 
-/*=======================================================
-	Resume Section
-=======================================================*/
 .timeline-block .section-header{
 	margin-bottom:80px;
 }
@@ -894,10 +891,23 @@ body.section-switching.up .animation-block{
 }
 
 
+/*=======================================================
+	Green IT Section
+=======================================================*/
+.presentation-text > p{
+	font-size:14px;
+	color:rgba(0,0,0,.4);
+	line-height:1.8em;
+}
+.presentation-text{
+	margin-bottom:25px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
 
 
 /*=======================================================
-	Portfolio Section
+Portfolio Section
 =======================================================*/
 .portfolio-block .section-header{
 	margin-bottom:80px;
