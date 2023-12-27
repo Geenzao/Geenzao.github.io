@@ -217,6 +217,16 @@ body.border-dark .main-content > .page-border{
 	text-transform:uppercase;
 	letter-spacing:4px;
 }
+
+h3{
+	font-size:20px;
+	font-weight:200;
+	margin:0;
+	text-transform:uppercase;
+	letter-spacing:4px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
 .section-block{
 	padding:110px;
 	padding-top:0;
@@ -894,13 +904,23 @@ body.section-switching.up .animation-block{
 /*=======================================================
 	Green IT Section
 =======================================================*/
-.presentation-text > p{
+.presentation-text > p, .presentation-text > ul{
 	font-size:14px;
 	color:rgba(0,0,0,.4);
 	line-height:1.8em;
 }
 .presentation-text{
 	margin-bottom:25px;
+}
+
+/*retirer le filtre */
+.pixel-art{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 50px;
+	filter: none;
+	object-fit: contain;
+	image-rendering: pixelated;
 }
 
 /*=======================================================
