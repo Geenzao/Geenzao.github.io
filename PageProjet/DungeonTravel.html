@@ -73,7 +73,7 @@
 						
 						<li>
                             <a href='../index.html#about' class='section-toggle' data-section='about' >
-								A propos
+								à propos
 							</a>
 						</li>
 						
@@ -207,9 +207,11 @@
 									<h4>
 										Le <strong class="color">Personnage</strong>
 									</h4>
+
 									<p>
 										J'ai tout d'abord codé le mouvement de mon personnage. J'ai donc commencé par le mouvement de base qui est de bouger de droite a gauche et inversement.
 										Puis j'ai ajouté le saut, la mort et la détection de collision avec les objets.<br><br>
+										Le code du personnage est le suivant :
 
 										<div class="code-container">
 											<div class="code">
@@ -260,26 +262,95 @@
 												<p><strong class="color">playerRB.velocity</strong> : La vitesse actuelle du rigidbody du joueur.</p>
 												<p><strong class="color">Mathf.Abs(move)</strong> : La valeur absolue de la valeur de déplacement horizontale, garantissant que la valeur est toujours positive.</p>
 												<p><strong class="color">facingRight</strong> : Un booléen indiquant si le joueur est actuellement orienté vers la droite.</p>
-											  </div>
+												<p>
+													Le code void Update() est une méthode Unity qui est appelée à chaque image. C'est ici que se trouvent les mises à jour du jeu.<br>
+													Le code ci-dessus permet de gérer le mouvement du personnage, le saut, la détection de collision avec le sol et la gestion de l'animation du personnage.<br>
+													Si le joueur est au sol alors le nombre de saut est remis a 0, et si le joueur appuie sur le bouton de saut alors on appele la fonction Jump() qui va faire sauter le joueur.<br>
+													Ensuite on récupère la valeur de l'axe horizontal pour déplacer le joueur et on met à jour l'animation du joueur en fonction de sa vitesse de déplacement.<br>
+													Enfin on vérifie si le joueur est orienté vers la droite et on le retourne si ce n'est pas le cas.
+												</p>
+											</div>
 										</div>
 									</p>
+
 									<h4>
 										Les <strong class="color">Ennemis</strong>
 									</h4>
+
 									<p>
 										Une fois le personnage fonctionnel, j'ai décidé d'ajouter mon premier ennemi qui est un orc. J'ai donc codé le mouvement de l'orc et la détection de collision avec le joueur. 
 										Cette orc est très simple, il se déplace d'un point a l'autre sans se soucier de la présence du joueur. Il est donc très facile a éviter même si il est intuable.<br><br>
+										Le code de l'orc est le suivant :
 
+										<div class="code-container">
+											<div class="code">
+												void Update()<br>
+												{<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;Vector3 dir = target.position - transform.position;<br>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);<br>
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;// Si l'ennemi est quasiment arrivé à sa destination<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;if(Vector3.Distance(transform.position, target.position) < 0.3f)<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;destPoint = (destPoint+1)%waypoints.Length;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;target = waypoints[destPoint];<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graphics.flipX = !graphics.flipX;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												}
+											</div>
+											<div class="explanation">
+												<p><strong class="color">Explications :</strong></p>
+												<p><strong class="color">dir</strong> : Cette variable représente la direction dans laquelle l'objet doit se déplacer pour atteindre sa cible.</p>
+												<p><strong class="color">transform</strong> : Il s'agit du composant de transformation de l'objet, qui contient des informations sur sa position, son orientation et son échelle dans l'espace du jeu.</p>
+												<p><strong class="color">target</strong> : Cette variable représente la position de la cible que l'objet essaie d'atteindre. Il s'agit probablement d'un point de passage.</p>
+												<p><strong class="color">speed</strong> : Cette variable détermine la vitesse à laquelle l'objet se déplace vers sa cible. Plus cette valeur est élevée, plus l'objet se déplace rapidement.</p>
+												<p><strong class="color">Time.deltaTime</strong> : Ceci est utilisé pour normaliser le mouvement de l'objet en fonction du temps écoulé entre chaque image de jeu. Cela garantit que le mouvement est fluide et cohérent, indépendamment des performances de l'appareil.</p>
+												<p><strong class="color">destPoint</strong> : Cette variable maintient l'indice du prochain point de passage dans le tableau. Elle est utilisée pour déterminer quelle sera la prochaine cible une fois que l'objet aura atteint son point de passage actuel.</p>
+												<p><strong class="color">waypoints</strong> : Ceci est probablement un tableau de positions représentant les différents points de passage que l'objet doit suivre. Chaque élément du tableau est une position dans l'espace du jeu.</p>
+												<p>
+													En résumé, ces variables sont utilisées pour contrôler le mouvement de l'objet vers sa cible, détecter quand il est proche de sa destination et mettre à jour ses paramètres graphiques en conséquence.
+												</p>
+											</div>
+										</div>
 									</p>
+
 									<h4>
 										Les <strong class="color">Interactibles</strong>
 									</h4>
+
 									<p>
 										Ensuite j'ai décidé d'ajouter les objects interactifs. J'ai commencé par ajouter la bombe qui tue le joueur si elle le touche. 
 										Puis j'ai ajouté la caisse qui est bougeable par le joueur et qui permet au joueur de lui monter dessus pour atteindre des endroits plus élevé.
 										Enfin j'ai ajouté la porte qui signifie la fin du niveau.
 									</p>
 
+									<h3>
+										Création du <strong class="color">premier Niveau</strong>
+									</h3>
+
+									<p>
+										Pour créer le premier niveau, j'ai utilisé le système de tilemap afin de disposé les différents éléments du niveau avec une grille. La tilemap permet de créer des niveaux rapidement et facilement mais ne permet pas d'ajouter les interactibles.
+										Je pouvais donc designer le niveau en plaçant les différents éléments sur la grille comme les plateformes, les murs, le sol, les torches et les chaînes.
+										Tout ce qui était interactible a été posé a la main directement dans la scène car ils n'avait pas la meme taille ou n'était pas immobile.<br>
+										Par exemple la caisse est bougeable donc elle n'a rien a faire dans le tilemap qui permet de gerer l'apparence du niveau.
+										<figure>
+											<img src="../images/DungeonTravel/Tilemap.png" alt="" class="grande-image">
+											<figcaption>Capture d'écran de la création du niveau</figcaption>
+										</figure>
+									</p>
+
+									<h3>
+										<strong class="color">conclusion</strong>
+									</h3>
+
+									<p>
+										Ce projet m'a permis de découvrir comment créer un jeu vidéo sur Unity. 
+										J'ai appris a utiliser les différents composants de Unity afin de pouvoir créer mon premier jeu vidéo.
+										J'ai découvert comment créer un personnage jouable, des ennemis, des objets interactifs, des UI et des niveaux.
+										Le C# était un langage que je connaissais pas, j'ai donc appris à l'utiliser tout au long du développement pour coder les différents éléments de mon jeu.
+										J'ai également découvert comment utiliser des assets gratuits pour mon jeu et comment les intégrer dans mon jeu.
+										Enfin, j'ai découvert comment créer des animations pour mon personnage et comment les intégrer dans mon jeu.
 								</div>
 
 							</div>
