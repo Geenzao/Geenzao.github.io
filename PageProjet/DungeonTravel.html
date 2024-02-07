@@ -73,14 +73,14 @@
 						
 						<li>
                             <a href='../index.html#about' class='section-toggle' data-section='about' >
-								A propos de moi
+								A propos
 							</a>
 						</li>
 						
 						
 						<li>
 							<a href='../index.html#portfolio' class='section-toggle' data-section='portfolio' >
-								Portfolio
+								Projets
 							</a>
 						</li>
 						
@@ -200,6 +200,85 @@
 										</ul>
 									</p>
 
+									<h3>
+										Développement du <strong class="color">Jeu</strong>
+									</h3>
+
+									<h4>
+										Le <strong class="color">Personnage</strong>
+									</h4>
+									<p>
+										J'ai tout d'abord codé le mouvement de mon personnage. J'ai donc commencé par le mouvement de base qui est de bouger de droite a gauche et inversement.
+										Puis j'ai ajouté le saut, la mort et la détection de collision avec les objets.<br><br>
+
+										<div class="code-container">
+											<div class="code">
+											  void Update()<br>
+											  {<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;playerAnim.SetBool("grounded", grounded);<br>
+											  <br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;if (grounded)<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jumpCount = 0;<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+											  <br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;if (Input.GetButtonDown("Jump"))<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (grounded)<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jump();<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else if (jumpCount < MaxJump)<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jump();<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+											  <br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;float move = Input.GetAxis("Horizontal");<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;playerRB.velocity = new Vector2(move * maxSpeed, playerRB.velocity.y);<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;playerAnim.SetFloat("MoveSpeed", Mathf.Abs(move));<br>
+											  <br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;if (facingRight && move < 0)<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flip();<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;else if (!facingRight && move > 0)<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flip();<br>
+											  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+											  }
+											</div>
+											<div class="explanation">
+												<p><strong class="color">Explications :</strong></p>
+												<p><strong class="color">grounded</strong> : Détermine si le personnage est au sol en vérifiant la présence de collisions avec un cercle de détection.</p>
+												<p><strong class="color">playerAnim.SetBool("grounded", grounded);</strong> : Met à jour l'animation du personnage pour refléter s'il est au sol ou en l'air.</p>
+												<p><strong class="color">jumpCount</strong> : Le nombre de sauts actuellement effectués par le joueur.</p>
+												<p><strong class="color">Input.GetButtonDown("Jump")</strong> : Vérifie si le bouton de saut est enfoncé dans cet instant précis.</p>
+												<p><strong class="color">MaxJump</strong> : Le nombre maximal de sauts autorisés.</p>
+												<p><strong class="color">Input.GetAxis("Horizontal")</strong> : Obtient la valeur de l'axe horizontal de l'entrée (par exemple, les touches de déplacement gauche/droite).</p>
+												<p><strong class="color">playerRB.velocity</strong> : La vitesse actuelle du rigidbody du joueur.</p>
+												<p><strong class="color">Mathf.Abs(move)</strong> : La valeur absolue de la valeur de déplacement horizontale, garantissant que la valeur est toujours positive.</p>
+												<p><strong class="color">facingRight</strong> : Un booléen indiquant si le joueur est actuellement orienté vers la droite.</p>
+											  </div>
+										</div>
+									</p>
+									<h4>
+										Les <strong class="color">Ennemis</strong>
+									</h4>
+									<p>
+										Une fois le personnage fonctionnel, j'ai décidé d'ajouter mon premier ennemi qui est un orc. J'ai donc codé le mouvement de l'orc et la détection de collision avec le joueur. 
+										Cette orc est très simple, il se déplace d'un point a l'autre sans se soucier de la présence du joueur. Il est donc très facile a éviter même si il est intuable.<br><br>
+
+									</p>
+									<h4>
+										Les <strong class="color">Interactibles</strong>
+									</h4>
+									<p>
+										Ensuite j'ai décidé d'ajouter les objects interactifs. J'ai commencé par ajouter la bombe qui tue le joueur si elle le touche. 
+										Puis j'ai ajouté la caisse qui est bougeable par le joueur et qui permet au joueur de lui monter dessus pour atteindre des endroits plus élevé.
+										Enfin j'ai ajouté la porte qui signifie la fin du niveau.
+									</p>
 
 								</div>
 
