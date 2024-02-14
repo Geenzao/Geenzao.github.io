@@ -940,6 +940,38 @@ body.section-switching.up .animation-block{
 	margin-right: 10px; /* Marge à droite pour séparer du texte d'explication */
 }
 
+/* Ajoutez des couleurs pour les mots-clés */
+.code .keyword {
+    color: rgb(0, 0, 255); /* par exemple, utilisez la couleur bleue pour les mots-clés */
+}
+
+/* Ajoutez des couleurs pour les commentaires */
+.code .comment {
+    color: rgb(22, 111, 22); /* par exemple, utilisez la couleur verte pour les commentaires */
+}
+
+/* Ajoutez des couleurs pour les chaînes de caractères */
+.code .string {
+    color: rgb(202, 39, 39); /* par exemple, utilisez la couleur rouge pour les chaînes de caractères */
+}
+
+.code .type {
+    color: rgb(176, 36, 176); /* Couleur des types de données */
+}
+
+.code .function {
+    color: rgb(149, 149, 13); /* Couleur des noms de fonction */
+}
+
+.code .angle-bracket {
+    color: rgb(197, 133, 14); /* Couleur des chevrons */
+}
+
+.code .variable {
+	color: rgb(72, 87, 194); /* Couleur des variables */
+	font-weight: bold;
+}
+
 /* Style pour les explications */
 .explanation {
 	flex: 1; /* Prend autant d'espace que possible */

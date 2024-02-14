@@ -109,7 +109,7 @@
 			<div class='sections' >
 
 				<!--=====================================================
-					Ascii Art Section
+					Projet Section
 				=====================================================-->
 				<section id='green_it' class='section resume-section active' >
 					
@@ -118,7 +118,7 @@
 							
 							<div class='section-header' >
 								<h2>
-									Projet <strong class='color' >Ascii Art</strong>
+									Projet <strong class='color' ><!-- Titre de la page --></strong>
 								</h2>
 							</div>
 							
@@ -126,60 +126,7 @@
 							<div class='col-md-19' >
 							
 								<div class='presentation-text' >
-									<p>
-                                        Le projet de conversion d'un image en caractères ASCII a été fait dans le cadre d'un projet étudiant en 1ere année de BUT.
-										Le but était de choisir une image et avec le code de ressortir un fichier texte contenant les caractères ASCII représentant l'image.
-										Cette application a été réalisée en C++ par groupe de 2 durant 12 heures.
-										Ce projet se divise en 3 parties qui représente des versions de ce projet. 
-										Plus la version est avancée, plus le projet comporte des fonctionnalités. 
-									</p><br>
-
-									<p>
-										<strong>Langage utilisé :</strong> C++<br>
-										<strong>Logiciel utilisé :</strong> Visual Studio 2022<br>
-										<strong>Nombre de personnes :</strong> 2<br>
-										<strong>Temps de développement :</strong> 3 mois<br>
-										<strong>Date :</strong> Decembre 2022<br>
-									</p>
-
-									<h3>
-										Première <strong class="color">version</strong>
-									</h3>
-
-									<p>
-										Lors de la première version, le programme devais demmander à l'utilisateur de rentre le nom de l'image 
-										qu'il souhaite convertir (cette image devait être dans un dossier spéciphique ).
-										Ensuite le programme la convertie sous le format PGM qui permet de lire un par un la nuance de gris de chaque pixel présent dans l’image.
-										Notre programme va lire chaque pixel de l’image et va lui attribuer un caractère ASCII en fonction de la nuance de gris du pixel.
-										Le résultat de la conversion seras affiché dans la console dans cette première version.<br><br>
-										Le code de cette conversion est le suivant :
-
-										<div class="code-container">
-											<div class="code">
-												<span class="keyword">std::string</span> <span class="function">convertToASCII</span>(<span class="type">int</span> <span class="variable">charr</span>, <span class="type">std::vector</span><span class="angle-bracket">&lt;</span><span class="type">std::string</span><span class="angle-bracket">&gt;</span> <span class="variable">Palette</span>)<br>
-												{<br>
-												&nbsp;&nbsp;&nbsp;&nbsp;<span class="type">double</span> <span class="variable">oc</span> = <span class="variable">charr</span> / 255.0;<br>
-												&nbsp;&nbsp;&nbsp;&nbsp;<span class="type">double</span> <span class="variable">Occ</span> = <span class="variable">oc</span> * (<span class="variable">Palette</span>.<span class="function">size</span>() - 1);<br>
-												&nbsp;&nbsp;&nbsp;&nbsp;<span class="type">int</span> <span class="variable">occ</span> = <span class="function">round</span>(<span class="variable">Occ</span>);<br>
-												&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="variable">Palette</span>[<span class="variable">occ</span>];<br>
-												}
-											</div>
-											<div class="explanation">
-												<p>Cette fonction prend en paramètre un entier qui représente la nuance de gris d'un pixel et un vecteur de string qui représente la palette de caractère ASCII.</p>
-												<p>	On divise la nuance de gris par 255 pour obtenir un nombre entre 0 et 1.</p>
-												<p>On multiplie ce nombre par la taille de la palette moins 1 pour obtenir un nombre entre 0 et la taille de la palette.</p>
-												<p>	On arrondi ce nombre pour obtenir un entier entre 0 et la taille de la palette.</p>
-												<p>	On retourne le caractère ASCII correspondant à la nuance de gris du pixel.</p>
-											</div>
-										</div>
-									</p>
-									<p>
-										Et donc voici le résultat obtenu avec cette première version :
-									</p>
-									<figure>
-										<img src="../images/AsciiArt/ascii_art_v1.png" alt="ascii_art_v1" class="grande-image">
-										<figcaption>Résultat de la première version</figcaption>
-									</figure>
+									<!-- Présentation du projet -->
 								</div>
 								
 							</div>
