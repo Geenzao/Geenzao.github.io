@@ -1027,6 +1027,20 @@ figcaption {
 	margin-right: auto; /* Centrer horizontalement */
 	height: 50px;
 }
+
+.mfp-close-projet{
+	top:2px;
+	right:2px;
+	background:#FFF;
+	height:48px;
+	width:48px;
+	opacity:1;
+	font-size:26px;
+}
+
+.mfp-close-projet:hover{
+	background:#FAFAFA;
+}
   
 
 /*=======================================================
@@ -1239,7 +1253,7 @@ Portfolio Section
 }
 .popup-box{
 	background:#FFF;
-	max-width:450px;
+	max-width:1450px;
 	margin:0 auto;
 	position:relative;
 	-webkit-box-shadow: 0 0 0 4px #FFF;
