@@ -138,7 +138,7 @@
 										<strong>Langage utilisé :</strong> C++<br>
 										<strong>Logiciel utilisé :</strong> Visual Studio 2022<br>
 										<strong>Nombre de personnes :</strong> 2<br>
-										<strong>Temps de développement :</strong> 3 mois<br>
+										<strong>Temps de développement :</strong> 12 heures<br>
 										<strong>Date :</strong> Decembre 2022<br>
 									</p>
 
@@ -173,13 +173,107 @@
 											</div>
 										</div>
 									</p>
+
 									<p>
 										Et donc voici le résultat obtenu avec cette première version :
 									</p>
+
 									<figure>
 										<img src="../images/AsciiArt/ascii_art_v1.png" alt="ascii_art_v1" class="grande-image">
 										<figcaption>Résultat de la première version</figcaption>
 									</figure>
+
+									<p>
+										Nous serons tous d'accord que le résultat ne fais pas réver. De 1 parce que l'affichage n'est pas trés beau et de 2 parce que l'on ne peut pas sauvegarder le résultat.
+										Mais cela est déjà un bon début car on sait que notre programme marche et que l’on a bien le résultat attendu. 
+										Cette étape n’est que le début et elle nous permet d’attaquer la version 2.
+									</p>
+
+									<h3>
+										Deuxième <strong class="color">version</strong>
+									</h3>
+
+									<p>
+										Cette deuxième version va nettement améliorer notre programme car elle va permettre l’enregistrement du Ascii Art dans un fichier TXT.<br>
+										Pour cela, c'est très simple, au lieu d'afficher les caractères ASCII dans la console, on les enregistre dans un fichier texte.<br>
+										Nous allons alors ouvrir le fichier texte sur un éditeur de texte comme notepad++ car on peux dézoomer et nous pourrons voir notre image en caractères ASCII.<br>
+									</p>
+
+									<figure>
+										<img src="../images/AsciiArt/ascii_art_v2.png" alt="ascii_art_v2" class="grande-image">
+										<figcaption>Résultat de la deuxième version</figcaption>
+									</figure>
+
+									<p>
+										Cette mise à jour permettra un meilleur affichage de l’image car la limite de caractère par ligne sera grandement agrandie, 
+										aucun retour a la ligne automatique ne sera alors effectué. 
+										Le fichier texte aura alors un nom qui sera renseigné par l’utilisateur et contiendra alors définitivement tout l’Ascii Art jusqu’à 
+										la suppression du fichier ou la modification de celui-ci.
+									</p>
+
+									<h3>
+										Troisième <strong class="color">version</strong>
+									</h3>
+
+									<p>
+										Cette dernière version va permettre le choix de la palette. C'est a dire quels caractères ASCII vont représenter les nuances de gris de l'image.
+										Le programme va demander à l'utilisateur de choisir une palette parmis une liste de palette prédéfinie.
+									</p>
+
+									<figure>
+										<img src="../images/AsciiArt/ascii_art_v3.png" alt="ascii_art_v3" class="grande-image">
+										<figcaption>Résultat de la troisième version</figcaption>
+									</figure>
+
+									<p>
+										Les fichiers de palette sont des fichiers texte dont chaque ligne est une chaine de caractères représentant un niveau de gris. 
+										La première ligne code le niveau de gris le plus sombre, la dernière le plus clair. 
+										Notre projet n’en contient que 4 mais il est tout à fait possible d’en implémenter d’autres. 
+										Ce choix de la palette permet à l’utilisateur d’avoir un rendu qui lui convient.
+									</p>
+
+									<h3>
+										autres <strong class="color">versions</strong>
+									</h3>
+
+									<p>
+										Par la suite, nous étions supposés faire les versions 4 et 5 que je vais vous expliquer : 
+										<ul>
+											<li>
+												La version 4 été supposé être celle qui ajouterais le fait de mettre les paramètres dans la console. 
+												Donc avec cette mise à jour, l’utilisateur peut choisir quels paramètres changer et lesquels non. 
+												S’ils ne changent rien, les paramètres non saisis sont mis par défaut par le programme, sinon, 
+												ils sont pris en compte et sont utilisé par le programme.
+												<figure>
+													<img src="../images/AsciiArt/ascii_art_v4.png" alt="ascii_art_v4" class="petite-image">
+													<figcaption>Explication de la quatrième version</figcaption>
+												</figure>
+											</li>
+											<li>
+												La dernière version ajoute le fais de pouvoir réduire la taille de l’image. 
+												C’est-à-dire que l’on va prendre les pixels 4 par 4 et on va en faire un seul pixel en faisant une moyenne.
+												<figure>
+													<img src="../images/AsciiArt/ascii_art_v5.png" alt="ascii_art_v5" class="petite-image">
+													<figcaption>Explication de la cinquième version</figcaption>
+												</figure>
+												Cela nous permettra d’avoir des fichiers moins lourds et moins conséquent.
+											</li>
+										</ul>
+									</p>
+
+									<h3>
+										<strong class="color">Conclusion</strong>
+									</h3>
+
+									<p>
+										Au cours de cette SAE, des compétences en programmation ont été utilisé afin de lire les données de l’image, 
+										les transformer en caractères Ascii et les afficher dans un fichier texte. Cependant, toutes ces parties demande la 
+										création de fonction et donc d’algorithme qui ont été optimisé plusieurs fois afin d’avoir le programme le plus rapide possible. 
+										Car effectivement, tout cela n’a pas été fais en un coup. Au début, une image de 1920x1080 mettait 5 minutes à être convertie 
+										en caractère Ascii. Et après l’optimisation, elle n’en mettait plus 10 secondes. Cette SAE m’a permis d’apprendre à optimiser 
+										des algorithmes mais aussi a en créer afin d’arriver à un projet abouti.
+									</p>
+
 								</div>
 								
 							</div>

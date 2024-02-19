@@ -1003,7 +1003,16 @@ figure {
 .grande-image {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	height: 300px;
+	width: 600px;
+	filter: none;
+	object-fit: contain;
+	image-rendering: pixelated;
+}
+
+.petite-image{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 400px;
 	filter: none;
 	object-fit: contain;
 	image-rendering: pixelated;
@@ -1016,6 +1025,7 @@ figcaption {
 	font-style: italic;
 	margin-left: auto; /* Centrer horizontalement */
 	margin-right: auto; /* Centrer horizontalement */
+	height: 50px;
 }
   
 
