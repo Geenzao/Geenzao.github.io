@@ -1253,7 +1253,7 @@ Portfolio Section
 }
 .popup-box{
 	background:#FFF;
-	max-width:1450px;
+	max-width:1000px;
 	margin:0 auto;
 	position:relative;
 	-webkit-box-shadow: 0 0 0 4px #FFF;
@@ -1268,9 +1268,10 @@ Portfolio Section
 	width:48px;
 	opacity:1;
 	font-size:26px;
+	border: 0.5mm solid #303F9F;
 }
 .popup-box > .mfp-close:hover{
-	background:#FAFAFA;
+	background:#ececec;
 }
 .popup-box > .content{
 	padding:20px;
