@@ -1297,11 +1297,86 @@
 																		<strong>Nombre de personnes :</strong> 2<br>
 																		<strong>Temps de développement :</strong> 1 mois<br>
 																		<strong>Date :</strong> Décembre 2023<br>
+																		<strong>Github :</strong> <a href="https://github.com/baptiste1563/RemindrV2" target="_blank">Remindr</a>
 																	</p>
 																	
 																	<h3>
 																		Choix des <strong class="color">technologies</strong>
 																	</h3>
+																	<p>
+																		<strong>NextJS :</strong> Nous avons choisi le Framework NextJS car c'est la technologie que nous connaissions le mieux et aussi parce que NextJS est une technologie montante. <br>
+																		<strong>React :</strong> Nous avons utilisé React pour le Front. Nous l'avons choisi car elle est ajoutée automatiquement avec NextJS et c'est le Framework de front le plus utilisé. <br>
+																		<strong>Prisma :</strong> Nous l'avons utilisé pour la gestion de la base de donnée car Prisma gères automatiquement les liaisons entre les tables. De plus, nous l'avons choisi car c'est un ORM qui fonction très bien avec la solution Next-Auth. <br>
+																		<strong>Next-Auth :</strong> Nous l'avons utilisé pour la connexion au site avec GitHub. Nous l'avons choisi car c'était une solution facile à mettre en place.
+																	</p>
+
+																	<h3>
+																		L'organisation du <strong class="color">projet</strong>
+																	</h3>
+
+																	<p>
+																		Le projet est organisé en 2 partie, le Front et le Back. <br>
+																		Le Front : 
+																	</p>
+																	<ul>
+																		<li><strong>index.jsx :</strong> Cette page contient la page de connexion si on n'est pas connecté, ou alors le tableau de bord avec la création de groupe, la liste des rappels qui arrivent a échéance dans 5 jours, et la liste des groupes auxquels on appartient.</li>
+																		<li><strong>group/[id].jsx :</strong> Cette page affiche les information du groupe avec le nom, la description, les membres, les rappels et 2 formulaire pour ajouter des rappels ou des membres.</li>																			
+																		<li><strong>remind/[id].jsx :</strong> Cette page affiche les informations d'un rappel. On peut ainsi le modifié ou le supprimer.</li>
+																	</ul>
+																	<p>
+																		Le Back :
+																	</p>
+																	<ul>
+																		<li><strong>add_group.js :</strong> Cette page est appelé quand on rempli le formulaire dans le tableau de bord pour la création d'un groupe. Elle va ajouter un groupe à la base de donnée seulement si il n'existe pas de groupe ayant le même nom. Puis on va ajouter l'utilisateur connecté au groupe.</li>
+																		<li><strong>add_user.js :</strong> Cette page est appelé quand on rempli le formulaire dans la page d'un groupe pour l'ajout d'un utilisateur. Elle va donc ajouter l'utilisateur dont le mail est écrit dans le formulaire et vérifier s'il existe bien dans la base de donnée.</li>
+																		<li><strong>add_remind.js :</strong> Cette page est appelé quand on rempli le formulaire dans la page d'un groupe pour la création d'un rappel. Elle va ajouter un rappel dans la base de donnée.</li>
+																		<li><strong>delete_remind.js :</strong> Cette page est appelé quand on clique sur le bouton "supprimer" dans la page d'un rappel. Elle va supprimer le rappel sur lequel on est actuellement de la base de donnée.</li>
+																		<li><strong>update_remind.js :</strong> Cette page est appelé quand on rempli le formulaire dans la page d'un rappel pour la modification du rappel. Elle va modifier le rappel sur lequel on est actuellement de la base de donnée.</li>
+																	</ul>
+
+																	<h3>
+																		Les <strong class="color">fonctionnalités</strong>
+																	</h3>
+
+																	<p>
+																		<p>Authentification et Comptes Utilisateurs :</p>
+																		<ul>
+																			<li>Les utilisateurs doivent pouvoir créer un compte et se connecter.</li>
+																			<li>Un utilisateur doit avoir un tableau de bord (dashboard) après la connexion.</li>
+																		</ul>
+
+																		<p>Gestion des Groupes :</p>
+																		<ul>
+																			<li>Les utilisateurs peuvent créer un ou plusieurs groupes.</li>
+																			<li>Chaque groupe doit avoir un nom unique.</li>
+																			<li>Les utilisateurs peuvent ajouter d'autres utilisateurs inscrits sur la plateforme dans leurs groupes.</li>
+																		</ul>
+
+																		<p>Création et Gestion des Rappels :</p>
+																		<ul>
+																			<li>Dans un groupe, les utilisateurs peuvent ajouter des rappels.</li>
+																			<li>Chaque rappel doit avoir un nom, une description, une date et une heure d'échéance.</li>
+																			<li>Les rappels peuvent être différenciés par couleur.</li>
+																			<li>Les rappels doivent être ordonnés sur le tableau de bord en fonction de leur date d'échéance.</li>
+																		</ul>
+
+																		<p>Affichage sur le Tableau de Bord :</p>
+																		<ul>
+																			<li>Sur le tableau de bord, les utilisateurs doivent d'abord voir les rappels qui arrivent à échéance rapidement, indépendamment du groupe.</li>
+																			<li>Ensuite, affichez la liste des groupes auxquels l'utilisateur appartient.</li>
+																		</ul>
+
+																		<p>Modification et Suppression des Rappels :</p>
+																		<ul>
+																			<li>Les utilisateurs peuvent modifier et supprimer les rappels dans les groupes auxquels ils appartiennent.</li>
+																		</ul>
+
+																		<p>Affichage des Rappels dans un Groupe :</p>
+																		<ul>
+																			<li>Lorsqu'un utilisateur accède à un groupe, les rappels doivent être affichés dans l'ordre de la date d'échéance, de la plus proche à la plus éloignée.</li>
+																			<li>Ajoutez une option pour afficher les rappels dépassés, avec un style différent pour indiquer qu'ils sont passés.</li>
+																		</ul>
+																	</p>
 																</div>
 																
 															</div>
