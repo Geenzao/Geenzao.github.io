@@ -90,6 +90,10 @@
             "src": "/languages.xml",
             "dest": "/public/languages.xml"
         },
+        {
+            "src": "/index.php",
+            "dest": "/public/index.php"
+        },
 
 
         {
