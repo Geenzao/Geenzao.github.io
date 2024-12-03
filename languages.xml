@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<traduction>
+   <fr>
+        <intro>Accueil</intro>
+        <about>à propos</about>
+   </fr>
+ 
+   <en>
+        <intro>Home</intro>
+        <about>about</about>
+   </en>
+</traduction>

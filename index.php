@@ -8,6 +8,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+	<?php
+		$langue_par_defaut = 'fr';
+		
+		$bibliotheque = simplexml_load_file('languages.xml'); // Je charge le document dans la page html.
+			
+		$langue = $bibliotheque->$langue_par_defaut; // Je choisis dans quel nœud prendre les traductions (ici : fr).
+	?>
 
 	<title>Portfolio Quentin Lorenzo</title>
 
@@ -70,13 +77,13 @@
 
 					<li>
 						<a href='#' class='section-toggle' data-section='intro'>
-							Accueil
+							<?php echo $langue->intro; ?>
 						</a>
 					</li>
 
 					<li>
 						<a href='#about' class='section-toggle' data-section='about'>
-							à propos
+						<?php echo $langue->about; ?>
 						</a>
 					</li>
 
@@ -319,7 +326,7 @@
 										<h4>Jeu vidéo</h4>
 
 										<p>
-											Fan de League Of Legends pour l’esprit compétitif
+											Fan de League Of Legends pour l'esprit compétitif
 										</p>
 
 									</div>
