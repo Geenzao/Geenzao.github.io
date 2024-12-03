@@ -83,8 +83,12 @@
         },
 
         {
-            "src": "/(.*)",
-            "dest": "/public/$1"
+            "src": "/CV_Quentin_Lorenzo.pdf",
+            "dest": "/public/CV_Quentin_Lorenzo.pdf"
+        },
+        {
+            "src": "/languages.xml",
+            "dest": "/public/languages.xml"
         },
 
 
