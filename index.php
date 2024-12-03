@@ -77,13 +77,13 @@
 
 					<li>
 						<a href='#' class='section-toggle' data-section='intro'>
-							<?= $langue->intro; ?>
+							<?php echo $langue->intro; ?>
 						</a>
 					</li>
 
 					<li>
 						<a href='#about' class='section-toggle' data-section='about'>
-						<?= $langue->about; ?>
+						<?php echo $langue->about; ?>
 						</a>
 					</li>
 
