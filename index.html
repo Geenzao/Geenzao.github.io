@@ -235,7 +235,7 @@
 										data-section='contact'>
 										Contactez moi
 									</a>
-									<a href="CV_Quentin_Lorenzo.pdf" class='btn-custom btn-color section-toggle'
+									<a href="pdf/CV_Quentin_Lorenzo.pdf" class='btn-custom btn-color section-toggle'
 										download="CV_Quentin_Lorenzo.pdf">
 										Télécharger le CV
 									</a>
@@ -761,6 +761,662 @@
 						</ul>
 
 						<ul class='portfolio-items'>
+
+							<li id="Neocity" data-groups='["jeu","greenit"]'>
+								<div class='inner'>
+									<img src='images/ImageNeocity.png' alt>
+
+									<div class='overlay'>
+
+										<a href='#popup-4' class='view-project'>
+											View Project
+										</a>
+
+										<!--project popup-->
+										<div id='popup-4' class='popup-box zoom-anim-dialog mfp-hide'>
+											<figure>
+
+												<!--project popup image-->
+												<img src='images/ImageNeocity.png' alt>
+
+											</figure>
+											<div class='content'>
+
+												<div class='section-block about-block'>
+													<div class='container-fluid'>
+
+														<div class='section-header'>
+															<h2>
+																Projet Green IT : <strong class='color'>Néocity</strong>
+															</h2>
+														</div>
+
+														<div class='col-md-19'>
+
+															<div class='presentation-text'>
+																<p>
+																	Néocity est un jeu développé par 4 étudiants lors
+																	d'un projet universitaire.
+																	Le but de ce projet était de créer un jeu qui devait
+																	être conçu le plus écologiquement possible.
+																	De plus, il devait être accessible, c'est-à-dire
+																	qu'un maximum de gens puisse y jouer.
+																	Ceci inclut dans notre cas les personnes en
+																	situation de handicap moteur.
+																</p><br>
+
+																<p>
+																	<strong>Langage utilisé :</strong> C#, JSON<br>
+																	<strong>Logiciel utilisé :</strong> Visual Studio,
+																	Unity, GitKraken<br>
+																	<strong>Nombre de personnes :</strong> 4<br>
+																	<strong>Temps de développement :</strong> 3 semaines
+																	à temps plein + 2 mois durant les heures dédiées et
+																	temps personnel<br>
+																	<strong>Date :</strong> Janvier - Mars 2024<br>
+																	<strong>GitHub :</strong> <a
+																		href="https://gitlab.antoine-chabanel.fr/n3rdt34m/neocity"
+																		target="_blank">Néocity</a>
+																</p>
+
+																<iframe frameborder="0" src="https://itch.io/embed/3244186" width="208" height="167">
+																	<a href="https://quentinlorenzo.itch.io/neocity">
+																		Neocity by Quentin Lorenzo, antoine-chabanel
+																	</a>
+																</iframe>
+
+																<h3>
+																	Le <strong class="color">trailer</strong>
+																</h3>
+																<p>
+																	<iframe width="560" height="315"
+																		src="https://www.youtube.com/embed/Og4vOZzyFlg?si=QOkGsC0rAvj3SJ0G"
+																		title="YouTube video player" frameborder="0"
+																		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+																		referrerpolicy="strict-origin-when-cross-origin"
+																		allowfullscreen></iframe>
+																</p>
+
+																<h3>
+																	Le <strong class="color">fonctionnement du
+																		jeu</strong>
+																</h3>
+
+																<p>
+																	Tout d'abord, Néocity est un jeu de gestion de
+																	ville. Le but est de gérer une ville en respectant
+																	l'environnement.
+																	Pour cela, le joueur aura 4 ressources à gérer :
+																	l'argent, le taux de CO2, le bonheur des habitants
+																	et le nombre d'habitants.
+																	Pour changer ces 4 ressources, le joueur pourra
+																	construire des bâtiments :
+																</p>
+																<ul>
+																	<li>Les loisirs permettent d'augmenter le bonheur
+																		dans sa ville</li>
+																	<li>Les usines permettent de faire travailler les
+																		gens</li>
+																	<li>Les habitations permettent d'augmenter la
+																		population de la ville</li>
+																</ul>
+																<p>
+																	Chacun des bâtiments pollue plus ou moins en
+																	fonction de sa taille et de son type.
+																	Par exemple, certains loisirs ne polluent pas car ce
+																	sont des parcs publics, alors que d'autres polluent
+																	beaucoup car ce sont des bars.
+																	Pour augmenter la population, nous avons mis en
+																	place une mécanique assez spéciale : un habitant
+																	n'existe que s'il travaille.
+																	Pour cela, il faut avoir au moins une usine et une
+																	résidence. Il est possible d'attribuer des habitants
+																	à des résidences pour déterminer où ils travaillent.
+																	Il y a aussi un hôtel de ville qui est améliorable
+																	et qui permet de débloquer des bâtiments.
+																	On peut également acheter de nouvelles parcelles
+																	pour agrandir la ville.
+																</p>
+
+																<h3>
+																	Notre démarche <strong
+																		class="color">écologique</strong>
+																</h3>
+
+																<p>
+																	Pour rendre notre jeu le plus écologique possible,
+																	nous avons mis en place plusieurs mécaniques :
+																</p>
+																<ul>
+																	<li>
+																		Lors de l'attribution des habitants à des
+																		usines, il faut prendre en compte la distance
+																		car cette distance déterminera si l'habitant
+																		prendra la voiture ou ira à pied.
+																		Bien évidemment, la voiture pollue alors que le
+																		vélo non.
+																	</li>
+																	<li>
+																		Lors de l'amélioration de l'hôtel de ville, il
+																		faut choisir entre 2 réformes. Ces deux réformes
+																		auront un impact écologique sur la ville.
+																		Par exemple, choisir entre promouvoir le
+																		covoiturage ou financer la recherche sur de
+																		nouvelles technologies d'isolation et débloquer
+																		un nouveau niveau d'amélioration pour ses
+																		logements.
+																	</li>
+																	<li>
+																		Nous proposons au joueur d'améliorer ses
+																		bâtiments afin de les rendre moins consommateurs
+																		d'énergie par habitant tout en augmentant leur
+																		capacité d'accueil.
+																	</li>
+																	<li>
+																		La pollution est un élément central du jeu. Si
+																		le taux de CO2 est trop élevé, il y a la
+																		possibilité de déclencher une catastrophe
+																		écologique qui réduira le bonheur des habitants
+																		:
+																		<ul>
+																			<li>
+																				La catastrophe la plus destructrice est
+																				la tempête, elle raye tout simplement
+																				des bâtiments de la carte.
+																				<figure>
+																					<img src="images/Neocity/preview_tempete-ezgif.com-video-to-gif-converter.gif"
+																						alt="" class="petite-image">
+																					<figcaption>Apparence tempete en jeu
+																					</figcaption>
+																				</figure>
+																			</li>
+																			<li>
+																				L'inondation est un peu moins
+																				destructrice mais touche plus de
+																				bâtiments, elle diminue le niveau de
+																				plusieurs bâtiments de la ville.
+																				<figure>
+																					<img src="images/Neocity/preview_inondation-ezgif.com-video-to-gif-converter.gif"
+																						alt="" class="petite-image">
+																					<figcaption>Apparence inondation en
+																						jeu</figcaption>
+																				</figure>
+																			</li>
+																			<li>
+																				Enfin, plus gentille, il y a la canicule
+																				qui réduit le bonheur des habitants de
+																				la ville pendant un temps, ce qui va
+																				réduire les revenus du joueur.
+																				<figure>
+																					<img src="images/Neocity/preview_canicule-ezgif.com-video-to-gif-converter.gif"
+																						alt="" class="petite-image">
+																					<figcaption>Apparence canicule en
+																						jeu</figcaption>
+																				</figure>
+																			</li>
+																		</ul>
+																	</li>
+																</ul>
+
+																<h3>
+																	Notre démarche <strong
+																		class="color">accessibilité</strong>
+																</h3>
+
+																<p>
+																	Afin de rendre notre jeu le plus accessible
+																	possible, nous avons implémenté la possibilité de
+																	jouer avec une manette.
+																	Grâce à cela, le jeu est jouable sur console et sur
+																	PC. Mais aussi par des personnes en situation de
+																	handicap moteur.
+																	Effectivement, avec des technologies comme le <a
+																		href="https://www.microsoft.com/fr-fr/d/manette-xbox-adaptive/8nsdbhz1n3d8"
+																		target="_blank">Xbox Adaptive Controller</a>, il
+																	est possible d'émuler une manette avec des boutons
+																	plus gros et plus faciles à appuyer.
+																	Ainsi, les personnes en situation de handicap moteur
+																	peuvent jouer à notre jeu.
+																</p>
+
+																<h3>
+																	Le développement de <strong
+																		class="color">Néocity</strong>
+																</h3>
+																
+																<p>
+																	Le sujet de la création du jeu nous a été
+																	distribué le 8 janvier 2024 matin. Le sujet
+																	était donc de créer un jeu vidéo.
+																	Nous avons donc commencé par réfléchir à ce
+																	que nous voulions faire comme type de jeu
+																	car le sujet était très large.
+																	Plusieurs idées nous étaient venues en tête
+																	mais nous avons finalement choisi de faire
+																	un jeu de gestion de ville car c'est un
+																	style de jeu que nous n'avions jamais fait.
+																	Ensuite, nous avons brainstormé sur les
+																	mécaniques que nous voulions mettre en place
+																	et sur le thème du jeu. Cela nous a pris 2
+																	jours pendant lesquels nous n'avons pas
+																	codé.
+																	Il en est ressorti que nous voulions un jeu
+																	de gestion avec plusieurs restrictions :
+																</p>
+
+																<ul>
+																	<li>
+																		Il nous fallait peu de bâtiments à
+																		développer car nous n'avions que 3
+																		semaines.
+																		Nous avons donc choisi de faire un jeu
+																		de gestion de ville avec 3 bâtiments :
+																		les loisirs, les usines et les
+																		habitations.
+																	</li>
+																	<li>
+																		Nous voulions un jeu écologique. Nous
+																		avons donc décidé de mettre en place un
+																		système de pollution.
+																		Chaque bâtiment pollue plus ou moins en
+																		fonction de sa taille et de son type.
+																		Par exemple, certains loisirs ne
+																		polluent pas car ce sont des parcs
+																		publics, alors que d'autres polluent
+																		beaucoup car ce sont des bars.
+																	</li>
+																	<li>
+																		Nous avons choisi de créer des terrains
+																		de 9 par 7 avec les routes déjà tracées.
+																		Cela nous a permis de gagner du temps
+																		sur le développement car nous savions
+																		que les routes étaient une mécanique
+																		complexe à mettre en place.
+																		Effectivement, si le joueur place les
+																		routes lui-même, il faut que les
+																		bâtiments soient reliés à une route pour
+																		fonctionner. Et il faut que toutes les
+																		routes soient reliées les unes aux
+																		autres.
+																		C'est en sachant cela que nous avons
+																		décidé de les placer nous-mêmes et de
+																		créer plusieurs terrains avec des routes
+																		différentes.
+																	</li>
+																	<li>
+																		Nous avons implémenté un hôtel de ville
+																		qui permet de débloquer des bâtiments et
+																		de choisir entre 2 réformes qui auront
+																		un impact écologique sur la ville.
+																		Cette mécanique nous permettait
+																		d'ajouter de la positivité à notre jeu
+																		en permettant au joueur de choisir entre
+																		2 bonnes choses.
+																	</li>
+																	<li>
+																		Et il nous fallait un tutoriel.
+																		Nous avions tout d'abord pensé à un
+																		tutoriel avec un personnage qui explique
+																		comment jouer et qui bloque nos actions
+																		tant que l'on n'a pas fait ce qu'il
+																		demande.
+																		Mais cela demandait beaucoup de temps et
+																		nous n'avions pas le temps de le faire.
+																		Nous avons donc décidé de faire un
+																		tutoriel écrit qui s'affiche en haut de
+																		l'écran et qui est accessible à tout
+																		moment dans le jeu.
+																	</li>
+																</ul>
+
+																<p>
+																	Après ce brainstorming, nous avons commencé
+																	le développement du jeu. Personnellement, je
+																	me suis occupé de l'intégralité des UI du
+																	jeu. J'ai donc fait le lien entre
+																	l'interface et le code.
+																	Dans le groupe, nous travaillions beaucoup
+																	ensemble car tout était lié. Par exemple,
+																	mes UI devaient être liées avec le code qui
+																	modifiait les variables du jeu.
+																	Nous avons donc travaillé pendant 3 semaines
+																	à temps plein. À la fin de ces 3 semaines,
+																	nous avons eu une soutenance devant un jury
+																	où nous leur avons présenté notre jeu.
+																	<br><br>
+																	Les remarques qui avaient été faites lors de
+																	la soutenance étaient les suivantes :
+																</p>
+																<ul>
+																	<li>Le jeu est trop fataliste. La pollution
+																		ne fait que grimper et il n'y a pas de
+																		moyen de la faire baisser.</li>
+																	<li>Il n'y a pas de réel enjeu à ne pas
+																		polluer car même si on perd un peu
+																		d'argent, au final le jeu est juste
+																		ralenti et on peut continuer à jouer. On
+																		ne perd rien et il n'y a pas de
+																		punitions.</li>
+																</ul>
+
+																<p>
+																	C'est ainsi que nous est venue l'idée de
+																	changer le système des ressources et
+																	d'ajouter des catastrophes écologiques.
+																	Au départ, la pollution faisait baisser le
+																	bonheur des habitants et donc les revenus du
+																	joueur.
+																	Maintenant, la pollution n'influe pas sur le
+																	bonheur des habitants mais peut déclencher
+																	des catastrophes écologiques qui elles, font
+																	baisser le bonheur des habitants et nous
+																	font perdre de l'argent.
+																	Ainsi, le joueur a un réel enjeu à ne pas
+																	polluer car il peut tout perdre s'il ne fait
+																	pas attention.
+																</p>
+
+																<p>
+																	Nous avons donc passé 2 mois à retravailler
+																	le jeu pour le rendre plus intéressant et
+																	plus jouable.
+																</p>
+
+																<h3>
+																	<strong class="color">Conclusion</strong>
+																</h3>
+
+																<p>
+																	Ce projet etait très intéressant car il nous
+																	a permis de découvrir comment developper un
+																	city builder.
+																	C'etait notre premier grand projet de jeu
+																	vidéo et nous avons appris beaucoup de
+																	choses comme comment bien se repartir les
+																	taches.
+																	Nous sommes fier d'avoir penser à créer un
+																	jeu qui sensibilise les gens à l'écologie ce
+																	qui a été la base de notre projet.
+																	Ce projet m'a permis de me confirmer dans
+																	mon choix d'orientation qui est le
+																	développement car nous avons passé beaucoup
+																	de temps à coder et cela était amusant mais
+																	aussi parfoit frustrant car ça ne marchait
+																	pas.
+																</p>
+
+																<h3>
+																	<strong class="color">Document de conception du jeu</strong><br>
+																</h3>
+								
+																<p>
+																	<a href="pdf/Conception de Neocity.pdf" class='btn-custom btn-color section-toggle'
+																		download="Conception de Neocity.pdf">
+																		Télécharger le document
+																	</a>
+																</p>
+
+															</div>
+
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+							</li>
+
+							<li id="WasteFlow" data-groups='["jeu","gamejam"]'>
+								<div class='inner'>
+									<img src='images/ImageWasteFlow.png' alt>
+
+									<div class='overlay'>
+
+										<a href='#popup-6' class='view-project'>
+											View Project
+										</a>
+
+										<!--project popup-->
+										<div id='popup-6' class='popup-box zoom-anim-dialog mfp-hide'>
+											<figure>
+
+												<!--project popup image-->
+												<img src='images/ImageWasteFlow.png' alt>
+
+											</figure>
+											<div class='content'>
+
+												<div class='section-block about-block'>
+													<div class='container-fluid'>
+
+														<div class='section-header'>
+															<h2>
+																Game Jam : <strong class='color'>Waste Flow</strong>
+															</h2>
+														</div>
+
+														<div class='col-md-19'>
+
+															<div class='presentation-text'>
+																<p>
+																	Waste Flow est jeu développé par 4 étudiants lors
+																	d'une Game Jam.
+																	Cette Game Jam avait pour thème "FLOW" ce qui avait
+																	plusieurs sens telles que l'écoulement, la fluidité,
+																	le flux, le style, etc.
+																	Nous avons décidé de faire un jeu où le joueur
+																	controle une tortue qui se déplace dans un courant
+																	australien et qui doit esquiver
+																	les déchets présent dans ce dernier.
+																</p><br>
+
+																<p>
+																	<strong>Lien Game Jam :</strong> <a
+																		href="https://itch.io/jam/melonjam5">Melon Jam
+																		5</a><br>
+																	<strong>Thème :</strong> FLOW<br>
+																	<strong>Langage utilisé :</strong> C#<br>
+																	<strong>Logiciel utilisé :</strong> Visual Studio,
+																	Unity, GitKraken<br>
+																	<strong>Nombre de personnes :</strong> 4<br>
+																	<strong>Temps de développement :</strong> 3
+																	jours<br>
+																	<strong>Date :</strong> 19 Juillet 2024 à 2:00 au 22
+																	Juillet 2024 à 2:20<br>
+																</p>
+
+																<iframe frameborder="0"
+																	src="https://itch.io/embed/2847092" width="208"
+																	height="167">
+																	<a href="https://quentinlorenzo.itch.io/waste-flow">
+																		Waste Flow by Quentin Lorenzo, tgrl84, Romain
+																		Liebert, Neps Nep
+																	</a>
+																</iframe>
+
+																<h3>
+																	Rapport avec le <strong class="color">thème</strong>
+																</h3>
+
+																<p>
+																	Waste Flow de par son nom et son gameplay est en
+																	lien avec le thème de la Game Jam.
+																	Effectivement la tortue se laisse porter par le
+																	courant et doit esquiver les déchets qui sont dans
+																	ce dernier.
+																	De plus, le joueur a la possibilité de récupéré de
+																	la monnaie virtuel afin de pouvoir acheter des skins
+																	et avoir
+																	plus de flow/style.
+																	Nous voulions faire un jeu amusant et en rapport
+																	avec le thème tout en sensibilisant les gens à la
+																	pollution des océans.
+																	C'est donc comme cela que nous est venue l'idée de
+																	ce jeu
+																</p>
+
+																<h3>
+																	Les <strong class="color">fonctionnalités</strong>
+																</h3>
+
+																<p>
+																	Le joueurs doit seulement déplacer le haut en bas et
+																	de droite à gauche pour esquiver les déchets.
+																	Il peut récupérer les étoiles de mer qui sont les
+																	collectibles du jeu permettant d'acheter des skins.
+																	L'autre collectible est plus rare et permet de
+																	récupérer 1 point de vie, c'est la méduse.
+																	La vitesse du jeu augmente au fur et à mesure. Ce
+																	qui veut dire que le début sera simple mais après
+																	les obstacles
+																	seront beaucoup plus difficile à esquiver.
+																	Le meilleur score du joueur ainsi que le nombre
+																	d'étoiles de mer collecté sont enregistré en données
+																	de cookie sur
+																	navigateur et dans un fichier sur PC.
+																</p>
+
+															</div>
+
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+							</li>
+
+							<li id="CupidCharms" data-groups='["jeu","gamejam"]'>
+								<div class='inner'>
+									<img src='images/ImageCupidCharm.png' alt>
+
+									<div class='overlay'>
+
+										<a href='#popup-5' class='view-project'>
+											View Project
+										</a>
+
+										<!--project popup-->
+										<div id='popup-5' class='popup-box zoom-anim-dialog mfp-hide'>
+											<figure>
+
+												<!--project popup image-->
+												<img src='images/ImageCupidCharm.png' alt>
+
+											</figure>
+											<div class='content'>
+
+												<div class='section-block about-block'>
+													<div class='container-fluid'>
+
+														<div class='section-header'>
+															<h2>
+																Game Jam : <strong class='color'>Cupid Charms</strong>
+															</h2>
+														</div>
+
+														<div class='col-md-19'>
+
+															<div class='presentation-text'>
+																<p>
+																	Cupid Charms est jeu développé par 4 étudiants lors
+																	d'une Game Jam.
+																	Cette Game Jam avait pour thème "CHARM" ce qui avait
+																	plusieurs sens telles que l'amour, les charmes
+																	(amulet), etc.
+																	Nous avons décidé de faire un jeu en isométrique où
+																	le joueur controle Cupidon dessendue sur Terre pour
+																	redonner vie à l'amour.
+																</p><br>
+
+																<p>
+																	<strong>Lien Game Jam :</strong> <a
+																		href="https://itch.io/jam/winter-melonjam-2023">Winter
+																		Melon Jam 2023</a><br>
+																	<strong>Thème :</strong> CHARM<br>
+																	<strong>Langage utilisé :</strong> C#<br>
+																	<strong>Logiciel utilisé :</strong> Visual Studio,
+																	Unity, GitKraken<br>
+																	<strong>Nombre de personnes :</strong> 4<br>
+																	<strong>Temps de développement :</strong> 3
+																	jours<br>
+																	<strong>Date :</strong> 28 Décembre 2023 à 1:00 au
+																	31 Décembre 2023 à 1:10<br>
+																</p>
+
+																<iframe frameborder="0"
+																	src="https://itch.io/embed/2448220" width="208"
+																	height="167">
+																	<a
+																		href="https://quentinlorenzo.itch.io/cupid-charms">
+																		Cupid Charms by Quentin Lorenzo, Neps Nep,
+																		antoine-chabanel, tgrl84
+																	</a>
+																</iframe>
+
+																<h3>
+																	Rapport avec le <strong class="color">thème</strong>
+																</h3>
+
+																<p>
+																	Cupid Charms de par son nom et son gameplay est en
+																	lien avec le thème de la Game Jam.
+																	Effectivement le joueur controlle Cupidon qui est
+																	l'incarnation de l'amour. De plus dans le jeu, il
+																	aura la possibilité de récupérer des charmes
+																	afin d'améliorer son arc.
+																</p>
+
+																<h3>
+																	Les <strong class="color">fonctionnalités</strong>
+																</h3>
+
+																<p>
+																	Le joueurs peut se déplacer avec ZQSD et tirer avec
+																	la souris. Le jeu se compose de plusieurs salle
+																	disposer aléatoirement.
+																	Il n'existe qu'une seule salle menant au prochain
+																	niveau. Le joueur doit donc trouver cette salle pour
+																	avancer.
+																	Dans chaque niveau il y a une salle contenant un
+																	coffre qui ne peut etre ouvert qu'avec une clé qui
+																	est dans une autre salle.
+																	Ce coffre contient un charme qui améliore l'arc du
+																	joueur. Les charmes peuvent être équipé en allant
+																	dans l'inventaire.
+																	Chaque salle a des ennemis qui attaque le joueur. Le
+																	joueurs leur tire alors dessus pour les rendre
+																	amoureux et changer l'ambiance de la salle.
+																	Le boss se trouve au niveau 5.
+																</p>
+
+															</div>
+
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+							</li>
 
 							<li id="AsciiArt" data-groups='["application"]'>
 								<div class='inner'>
@@ -1838,645 +2494,6 @@
 								</div>
 							</li>
 
-							<li id="Neocity" data-groups='["jeu","greenit"]'>
-								<div class='inner'>
-									<img src='images/ImageNeocity.png' alt>
-
-									<div class='overlay'>
-
-										<a href='#popup-4' class='view-project'>
-											View Project
-										</a>
-
-										<!--project popup-->
-										<div id='popup-4' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
-
-												<!--project popup image-->
-												<img src='images/ImageNeocity.png' alt>
-
-											</figure>
-											<div class='content'>
-
-												<div class='section-block about-block'>
-													<div class='container-fluid'>
-
-														<div class='section-header'>
-															<h2>
-																Projet Green IT : <strong class='color'>Néocity</strong>
-															</h2>
-														</div>
-
-														<div class='col-md-19'>
-
-															<div class='presentation-text'>
-																<p>
-																	Néocity est un jeu développé par 4 étudiants lors
-																	d'un projet universitaire.
-																	Le but de ce projet était de créer un jeu qui devait
-																	être conçu le plus écologiquement possible.
-																	De plus, il devait être accessible, c'est-à-dire
-																	qu'un maximum de gens puisse y jouer.
-																	Ceci inclut dans notre cas les personnes en
-																	situation de handicap moteur.
-																</p><br>
-
-																<p>
-																	<strong>Langage utilisé :</strong> C#, JSON<br>
-																	<strong>Logiciel utilisé :</strong> Visual Studio,
-																	Unity, GitKraken<br>
-																	<strong>Nombre de personnes :</strong> 4<br>
-																	<strong>Temps de développement :</strong> 3 semaines
-																	à temps plein + 2 mois durant les heures dédiées et
-																	temps personnel<br>
-																	<strong>Date :</strong> Janvier - Mars 2024<br>
-																	<strong>GitHub :</strong> <a
-																		href="https://gitlab.antoine-chabanel.fr/n3rdt34m/neocity"
-																		target="_blank">Néocity</a>
-																</p>
-
-																<h3>
-																	Le <strong class="color">trailer</strong>
-																</h3>
-																<p>
-																	<iframe width="560" height="315"
-																		src="https://www.youtube.com/embed/Og4vOZzyFlg?si=QOkGsC0rAvj3SJ0G"
-																		title="YouTube video player" frameborder="0"
-																		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-																		referrerpolicy="strict-origin-when-cross-origin"
-																		allowfullscreen></iframe>
-																</p>
-
-																<h3>
-																	Le <strong class="color">fonctionnement du
-																		jeu</strong>
-																</h3>
-
-																<p>
-																	Tout d'abord, Néocity est un jeu de gestion de
-																	ville. Le but est de gérer une ville en respectant
-																	l'environnement.
-																	Pour cela, le joueur aura 4 ressources à gérer :
-																	l'argent, le taux de CO2, le bonheur des habitants
-																	et le nombre d'habitants.
-																	Pour changer ces 4 ressources, le joueur pourra
-																	construire des bâtiments :
-																</p>
-																<ul>
-																	<li>Les loisirs permettent d'augmenter le bonheur
-																		dans sa ville</li>
-																	<li>Les usines permettent de faire travailler les
-																		gens</li>
-																	<li>Les habitations permettent d'augmenter la
-																		population de la ville</li>
-																</ul>
-																<p>
-																	Chacun des bâtiments pollue plus ou moins en
-																	fonction de sa taille et de son type.
-																	Par exemple, certains loisirs ne polluent pas car ce
-																	sont des parcs publics, alors que d'autres polluent
-																	beaucoup car ce sont des bars.
-																	Pour augmenter la population, nous avons mis en
-																	place une mécanique assez spéciale : un habitant
-																	n'existe que s'il travaille.
-																	Pour cela, il faut avoir au moins une usine et une
-																	résidence. Il est possible d'attribuer des habitants
-																	à des résidences pour déterminer où ils travaillent.
-																	Il y a aussi un hôtel de ville qui est améliorable
-																	et qui permet de débloquer des bâtiments.
-																	On peut également acheter de nouvelles parcelles
-																	pour agrandir la ville.
-																</p>
-
-																<h3>
-																	Notre démarche <strong
-																		class="color">écologique</strong>
-																</h3>
-
-																<p>
-																	Pour rendre notre jeu le plus écologique possible,
-																	nous avons mis en place plusieurs mécaniques :
-																</p>
-																<ul>
-																	<li>
-																		Lors de l'attribution des habitants à des
-																		usines, il faut prendre en compte la distance
-																		car cette distance déterminera si l'habitant
-																		prendra la voiture ou ira à pied.
-																		Bien évidemment, la voiture pollue alors que le
-																		vélo non.
-																	</li>
-																	<li>
-																		Lors de l'amélioration de l'hôtel de ville, il
-																		faut choisir entre 2 réformes. Ces deux réformes
-																		auront un impact écologique sur la ville.
-																		Par exemple, choisir entre promouvoir le
-																		covoiturage ou financer la recherche sur de
-																		nouvelles technologies d'isolation et débloquer
-																		un nouveau niveau d'amélioration pour ses
-																		logements.
-																	</li>
-																	<li>
-																		Nous proposons au joueur d'améliorer ses
-																		bâtiments afin de les rendre moins consommateurs
-																		d'énergie par habitant tout en augmentant leur
-																		capacité d'accueil.
-																	</li>
-																	<li>
-																		La pollution est un élément central du jeu. Si
-																		le taux de CO2 est trop élevé, il y a la
-																		possibilité de déclencher une catastrophe
-																		écologique qui réduira le bonheur des habitants
-																		:
-																		<ul>
-																			<li>
-																				La catastrophe la plus destructrice est
-																				la tempête, elle raye tout simplement
-																				des bâtiments de la carte.
-																				<figure>
-																					<img src="images/Neocity/preview_tempete-ezgif.com-video-to-gif-converter.gif"
-																						alt="" class="petite-image">
-																					<figcaption>Apparence tempete en jeu
-																					</figcaption>
-																				</figure>
-																			</li>
-																			<li>
-																				L'inondation est un peu moins
-																				destructrice mais touche plus de
-																				bâtiments, elle diminue le niveau de
-																				plusieurs bâtiments de la ville.
-																				<figure>
-																					<img src="images/Neocity/preview_inondation-ezgif.com-video-to-gif-converter.gif"
-																						alt="" class="petite-image">
-																					<figcaption>Apparence inondation en
-																						jeu</figcaption>
-																				</figure>
-																			</li>
-																			<li>
-																				Enfin, plus gentille, il y a la canicule
-																				qui réduit le bonheur des habitants de
-																				la ville pendant un temps, ce qui va
-																				réduire les revenus du joueur.
-																				<figure>
-																					<img src="images/Neocity/preview_canicule-ezgif.com-video-to-gif-converter.gif"
-																						alt="" class="petite-image">
-																					<figcaption>Apparence canicule en
-																						jeu</figcaption>
-																				</figure>
-																			</li>
-																		</ul>
-																	</li>
-																</ul>
-
-																<h3>
-																	Notre démarche <strong
-																		class="color">accessibilité</strong>
-																</h3>
-
-																<p>
-																	Afin de rendre notre jeu le plus accessible
-																	possible, nous avons implémenté la possibilité de
-																	jouer avec une manette.
-																	Grâce à cela, le jeu est jouable sur console et sur
-																	PC. Mais aussi par des personnes en situation de
-																	handicap moteur.
-																	Effectivement, avec des technologies comme le <a
-																		href="https://www.microsoft.com/fr-fr/d/manette-xbox-adaptive/8nsdbhz1n3d8"
-																		target="_blank">Xbox Adaptive Controller</a>, il
-																	est possible d'émuler une manette avec des boutons
-																	plus gros et plus faciles à appuyer.
-																	Ainsi, les personnes en situation de handicap moteur
-																	peuvent jouer à notre jeu.
-																</p>
-
-																<h3>
-																	Le développement de <strong
-																		class="color">Néocity</strong>
-																</h3>
-																
-																<p>
-																	Le sujet de la création du jeu nous a été
-																	distribué le 8 janvier 2024 matin. Le sujet
-																	était donc de créer un jeu vidéo.
-																	Nous avons donc commencé par réfléchir à ce
-																	que nous voulions faire comme type de jeu
-																	car le sujet était très large.
-																	Plusieurs idées nous étaient venues en tête
-																	mais nous avons finalement choisi de faire
-																	un jeu de gestion de ville car c'est un
-																	style de jeu que nous n'avions jamais fait.
-																	Ensuite, nous avons brainstormé sur les
-																	mécaniques que nous voulions mettre en place
-																	et sur le thème du jeu. Cela nous a pris 2
-																	jours pendant lesquels nous n'avons pas
-																	codé.
-																	Il en est ressorti que nous voulions un jeu
-																	de gestion avec plusieurs restrictions :
-																</p>
-
-																<ul>
-																	<li>
-																		Il nous fallait peu de bâtiments à
-																		développer car nous n'avions que 3
-																		semaines.
-																		Nous avons donc choisi de faire un jeu
-																		de gestion de ville avec 3 bâtiments :
-																		les loisirs, les usines et les
-																		habitations.
-																	</li>
-																	<li>
-																		Nous voulions un jeu écologique. Nous
-																		avons donc décidé de mettre en place un
-																		système de pollution.
-																		Chaque bâtiment pollue plus ou moins en
-																		fonction de sa taille et de son type.
-																		Par exemple, certains loisirs ne
-																		polluent pas car ce sont des parcs
-																		publics, alors que d'autres polluent
-																		beaucoup car ce sont des bars.
-																	</li>
-																	<li>
-																		Nous avons choisi de créer des terrains
-																		de 9 par 7 avec les routes déjà tracées.
-																		Cela nous a permis de gagner du temps
-																		sur le développement car nous savions
-																		que les routes étaient une mécanique
-																		complexe à mettre en place.
-																		Effectivement, si le joueur place les
-																		routes lui-même, il faut que les
-																		bâtiments soient reliés à une route pour
-																		fonctionner. Et il faut que toutes les
-																		routes soient reliées les unes aux
-																		autres.
-																		C'est en sachant cela que nous avons
-																		décidé de les placer nous-mêmes et de
-																		créer plusieurs terrains avec des routes
-																		différentes.
-																	</li>
-																	<li>
-																		Nous avons implémenté un hôtel de ville
-																		qui permet de débloquer des bâtiments et
-																		de choisir entre 2 réformes qui auront
-																		un impact écologique sur la ville.
-																		Cette mécanique nous permettait
-																		d'ajouter de la positivité à notre jeu
-																		en permettant au joueur de choisir entre
-																		2 bonnes choses.
-																	</li>
-																	<li>
-																		Et il nous fallait un tutoriel.
-																		Nous avions tout d'abord pensé à un
-																		tutoriel avec un personnage qui explique
-																		comment jouer et qui bloque nos actions
-																		tant que l'on n'a pas fait ce qu'il
-																		demande.
-																		Mais cela demandait beaucoup de temps et
-																		nous n'avions pas le temps de le faire.
-																		Nous avons donc décidé de faire un
-																		tutoriel écrit qui s'affiche en haut de
-																		l'écran et qui est accessible à tout
-																		moment dans le jeu.
-																	</li>
-																</ul>
-
-																<p>
-																	Après ce brainstorming, nous avons commencé
-																	le développement du jeu. Personnellement, je
-																	me suis occupé de l'intégralité des UI du
-																	jeu. J'ai donc fait le lien entre
-																	l'interface et le code.
-																	Dans le groupe, nous travaillions beaucoup
-																	ensemble car tout était lié. Par exemple,
-																	mes UI devaient être liées avec le code qui
-																	modifiait les variables du jeu.
-																	Nous avons donc travaillé pendant 3 semaines
-																	à temps plein. À la fin de ces 3 semaines,
-																	nous avons eu une soutenance devant un jury
-																	où nous leur avons présenté notre jeu.
-																	<br><br>
-																	Les remarques qui avaient été faites lors de
-																	la soutenance étaient les suivantes :
-																</p>
-																<ul>
-																	<li>Le jeu est trop fataliste. La pollution
-																		ne fait que grimper et il n'y a pas de
-																		moyen de la faire baisser.</li>
-																	<li>Il n'y a pas de réel enjeu à ne pas
-																		polluer car même si on perd un peu
-																		d'argent, au final le jeu est juste
-																		ralenti et on peut continuer à jouer. On
-																		ne perd rien et il n'y a pas de
-																		punitions.</li>
-																</ul>
-
-																<p>
-																	C'est ainsi que nous est venue l'idée de
-																	changer le système des ressources et
-																	d'ajouter des catastrophes écologiques.
-																	Au départ, la pollution faisait baisser le
-																	bonheur des habitants et donc les revenus du
-																	joueur.
-																	Maintenant, la pollution n'influe pas sur le
-																	bonheur des habitants mais peut déclencher
-																	des catastrophes écologiques qui elles, font
-																	baisser le bonheur des habitants et nous
-																	font perdre de l'argent.
-																	Ainsi, le joueur a un réel enjeu à ne pas
-																	polluer car il peut tout perdre s'il ne fait
-																	pas attention.
-																</p>
-
-																<p>
-																	Nous avons donc passé 2 mois à retravailler
-																	le jeu pour le rendre plus intéressant et
-																	plus jouable.
-																</p>
-
-																<h3>
-																	<strong class="color">Conclusion</strong>
-																</h3>
-
-																<p>
-																	Ce projet etait très intéressant car il nous
-																	a permis de découvrir comment developper un
-																	city builder.
-																	C'etait notre premier grand projet de jeu
-																	vidéo et nous avons appris beaucoup de
-																	choses comme comment bien se repartir les
-																	taches.
-																	Nous sommes fier d'avoir penser à créer un
-																	jeu qui sensibilise les gens à l'écologie ce
-																	qui a été la base de notre projet.
-																	Ce projet m'a permis de me confirmer dans
-																	mon choix d'orientation qui est le
-																	développement car nous avons passé beaucoup
-																	de temps à coder et cela était amusant mais
-																	aussi parfoit frustrant car ça ne marchait
-																	pas.
-																</p>
-
-															</div>
-
-														</div>
-
-													</div>
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-							</li>
-
-							<li id="CupidCharms" data-groups='["jeu","gamejam"]'>
-								<div class='inner'>
-									<img src='images/ImageCupidCharm.png' alt>
-
-									<div class='overlay'>
-
-										<a href='#popup-5' class='view-project'>
-											View Project
-										</a>
-
-										<!--project popup-->
-										<div id='popup-5' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
-
-												<!--project popup image-->
-												<img src='images/ImageCupidCharm.png' alt>
-
-											</figure>
-											<div class='content'>
-
-												<div class='section-block about-block'>
-													<div class='container-fluid'>
-
-														<div class='section-header'>
-															<h2>
-																Game Jam : <strong class='color'>Cupid Charms</strong>
-															</h2>
-														</div>
-
-														<div class='col-md-19'>
-
-															<div class='presentation-text'>
-																<p>
-																	Cupid Charms est jeu développé par 4 étudiants lors
-																	d'une Game Jam.
-																	Cette Game Jam avait pour thème "CHARM" ce qui avait
-																	plusieurs sens telles que l'amour, les charmes
-																	(amulet), etc.
-																	Nous avons décidé de faire un jeu en isométrique où
-																	le joueur controle Cupidon dessendue sur Terre pour
-																	redonner vie à l'amour.
-																</p><br>
-
-																<p>
-																	<strong>Lien Game Jam :</strong> <a
-																		href="https://itch.io/jam/winter-melonjam-2023">Winter
-																		Melon Jam 2023</a><br>
-																	<strong>Thème :</strong> CHARM<br>
-																	<strong>Langage utilisé :</strong> C#<br>
-																	<strong>Logiciel utilisé :</strong> Visual Studio,
-																	Unity, GitKraken<br>
-																	<strong>Nombre de personnes :</strong> 4<br>
-																	<strong>Temps de développement :</strong> 3
-																	jours<br>
-																	<strong>Date :</strong> 28 Décembre 2023 à 1:00 au
-																	31 Décembre 2023 à 1:10<br>
-																</p>
-
-																<iframe frameborder="0"
-																	src="https://itch.io/embed/2448220" width="208"
-																	height="167">
-																	<a
-																		href="https://quentinlorenzo.itch.io/cupid-charms">
-																		Cupid Charms by Quentin Lorenzo, Neps Nep,
-																		antoine-chabanel, tgrl84
-																	</a>
-																</iframe>
-
-																<h3>
-																	Rapport avec le <strong class="color">thème</strong>
-																</h3>
-
-																<p>
-																	Cupid Charms de par son nom et son gameplay est en
-																	lien avec le thème de la Game Jam.
-																	Effectivement le joueur controlle Cupidon qui est
-																	l'incarnation de l'amour. De plus dans le jeu, il
-																	aura la possibilité de récupérer des charmes
-																	afin d'améliorer son arc.
-																</p>
-
-																<h3>
-																	Les <strong class="color">fonctionnalités</strong>
-																</h3>
-
-																<p>
-																	Le joueurs peut se déplacer avec ZQSD et tirer avec
-																	la souris. Le jeu se compose de plusieurs salle
-																	disposer aléatoirement.
-																	Il n'existe qu'une seule salle menant au prochain
-																	niveau. Le joueur doit donc trouver cette salle pour
-																	avancer.
-																	Dans chaque niveau il y a une salle contenant un
-																	coffre qui ne peut etre ouvert qu'avec une clé qui
-																	est dans une autre salle.
-																	Ce coffre contient un charme qui améliore l'arc du
-																	joueur. Les charmes peuvent être équipé en allant
-																	dans l'inventaire.
-																	Chaque salle a des ennemis qui attaque le joueur. Le
-																	joueurs leur tire alors dessus pour les rendre
-																	amoureux et changer l'ambiance de la salle.
-																	Le boss se trouve au niveau 5.
-																</p>
-
-															</div>
-
-														</div>
-
-													</div>
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-							</li>
-
-							<li id="WasteFlow" data-groups='["jeu","gamejam"]'>
-								<div class='inner'>
-									<img src='images/ImageWasteFlow.png' alt>
-
-									<div class='overlay'>
-
-										<a href='#popup-6' class='view-project'>
-											View Project
-										</a>
-
-										<!--project popup-->
-										<div id='popup-6' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
-
-												<!--project popup image-->
-												<img src='images/ImageWasteFlow.png' alt>
-
-											</figure>
-											<div class='content'>
-
-												<div class='section-block about-block'>
-													<div class='container-fluid'>
-
-														<div class='section-header'>
-															<h2>
-																Game Jam : <strong class='color'>Waste Flow</strong>
-															</h2>
-														</div>
-
-														<div class='col-md-19'>
-
-															<div class='presentation-text'>
-																<p>
-																	Waste Flow est jeu développé par 4 étudiants lors
-																	d'une Game Jam.
-																	Cette Game Jam avait pour thème "FLOW" ce qui avait
-																	plusieurs sens telles que l'écoulement, la fluidité,
-																	le flux, le style, etc.
-																	Nous avons décidé de faire un jeu où le joueur
-																	controle une tortue qui se déplace dans un courant
-																	australien et qui doit esquiver
-																	les déchets présent dans ce dernier.
-																</p><br>
-
-																<p>
-																	<strong>Lien Game Jam :</strong> <a
-																		href="https://itch.io/jam/melonjam5">Melon Jam
-																		5</a><br>
-																	<strong>Thème :</strong> FLOW<br>
-																	<strong>Langage utilisé :</strong> C#<br>
-																	<strong>Logiciel utilisé :</strong> Visual Studio,
-																	Unity, GitKraken<br>
-																	<strong>Nombre de personnes :</strong> 4<br>
-																	<strong>Temps de développement :</strong> 3
-																	jours<br>
-																	<strong>Date :</strong> 19 Juillet 2024 à 2:00 au 22
-																	Juillet 2024 à 2:20<br>
-																</p>
-
-																<iframe frameborder="0"
-																	src="https://itch.io/embed/2847092" width="208"
-																	height="167">
-																	<a href="https://quentinlorenzo.itch.io/waste-flow">
-																		Waste Flow by Quentin Lorenzo, tgrl84, Romain
-																		Liebert, Neps Nep
-																	</a>
-																</iframe>
-
-																<h3>
-																	Rapport avec le <strong class="color">thème</strong>
-																</h3>
-
-																<p>
-																	Waste Flow de par son nom et son gameplay est en
-																	lien avec le thème de la Game Jam.
-																	Effectivement la tortue se laisse porter par le
-																	courant et doit esquiver les déchets qui sont dans
-																	ce dernier.
-																	De plus, le joueur a la possibilité de récupéré de
-																	la monnaie virtuel afin de pouvoir acheter des skins
-																	et avoir
-																	plus de flow/style.
-																	Nous voulions faire un jeu amusant et en rapport
-																	avec le thème tout en sensibilisant les gens à la
-																	pollution des océans.
-																	C'est donc comme cela que nous est venue l'idée de
-																	ce jeu
-																</p>
-
-																<h3>
-																	Les <strong class="color">fonctionnalités</strong>
-																</h3>
-
-																<p>
-																	Le joueurs doit seulement déplacer le haut en bas et
-																	de droite à gauche pour esquiver les déchets.
-																	Il peut récupérer les étoiles de mer qui sont les
-																	collectibles du jeu permettant d'acheter des skins.
-																	L'autre collectible est plus rare et permet de
-																	récupérer 1 point de vie, c'est la méduse.
-																	La vitesse du jeu augmente au fur et à mesure. Ce
-																	qui veut dire que le début sera simple mais après
-																	les obstacles
-																	seront beaucoup plus difficile à esquiver.
-																	Le meilleur score du joueur ainsi que le nombre
-																	d'étoiles de mer collecté sont enregistré en données
-																	de cookie sur
-																	navigateur et dans un fichier sur PC.
-																</p>
-
-															</div>
-
-														</div>
-
-													</div>
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-							</li>
-
 						</ul>
 
 					</div>
@@ -2751,6 +2768,17 @@
 									Ce projet m'a permis de me confirmer dans mon choix d'orientation qui est le
 									développement car nous avons passé beaucoup de temps à coder et cela était amusant
 									mais aussi parfoit frustrant car ça ne marchait pas.
+								</p>
+
+								<h3>
+									<strong class="color">Document de conception du jeu</strong><br>
+								</h3>
+
+								<p>
+									<a href="pdf/Conception de Neocity.pdf" class='btn-custom btn-color section-toggle'
+										download="Conception de Neocity.pdf">
+										Télécharger le document
+									</a>
 								</p>
 							</div>
 						</div>
