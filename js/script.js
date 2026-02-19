@@ -60,6 +60,39 @@ $(function(){
 				}
 			}
 		}
+		// Fermer le menu après navigation
+		$('.menu').css('width', '0');
+		$('body').removeClass('menu-open');
+	});
+	
+	/*=========================================================================
+		Menu Close Button
+	=========================================================================*/
+	$('.menu-close').on('click', function(e){
+		e.preventDefault();
+		$('.menu').css('width', '0');
+		$('body').removeClass('menu-open');
+	});
+	
+	/*=========================================================================
+		Menu Open Button (Mobile)
+	=========================================================================*/
+	$('.menu-btn').on('click', function(e){
+		e.preventDefault();
+		var menuWidth = $('.menu').width();
+		if(menuWidth === 0) {
+			// Ouvrir le menu
+			if($(window).width() <= 768) {
+				$('.menu').css('width', '100%');
+			} else {
+				$('.menu').css('width', '300px');
+			}
+			$('body').addClass('menu-open');
+		} else {
+			// Fermer le menu
+			$('.menu').css('width', '0');
+			$('body').removeClass('menu-open');
+		}
 	});
 	
 	
