@@ -1,6 +1,9 @@
 $(function(){
 	"use strict";
 	
+	// S'assurer que le menu est fermé au chargement
+	$('.menu').css('width', '0');
+	
 	var sect = $( window.location.hash ),
 		portfolio = $('.portfolio-items');
 	
